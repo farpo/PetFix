@@ -77,14 +77,15 @@ public class Main extends JavaPlugin
 //                bitMaskContainer.setValue(bitMask);
                 if(wrappedowner == null) return;
                 if(wrappedowner.getValue() instanceof Optional<?> || wrappedowner.getValue() instanceof com.google.common.base.Optional<?>) {
-                    System.out.println(wrappedowner.getValue().toString());
+
                     System.out.println("marked");
-                    metadata.remove(wrappedowner);
+                    wrappedowner.setValue(Optional.empty());
+                    System.out.println(wrappedowner.getValue());
                 }else{
-                    System.out.println(wrappedowner.getValue().toString());
 
                     return;
                 }
+
 
                 event.setPacket(packet);
 
