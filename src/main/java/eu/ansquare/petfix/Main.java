@@ -53,8 +53,6 @@ public class Main extends JavaPlugin
     }
     @Override
     public void onEnable(){
-        getServer().getPluginManager().registerEvents(new ClickkinEvent(), this);
-
         ProtocolManager manager = ProtocolLibrary.getProtocolManager();
         manager.addPacketListener(new PacketAdapter(this, ListenerPriority.NORMAL, PacketType.Play.Server.ENTITY_METADATA) {
             @Override
