@@ -6,3 +6,7 @@ author: SasaElele
 website: https://papermc.io
 api-version: 1.19
 depend: [ ProtocolLib ]
+commands:
+ ill:
+    description: Packet illusion
+    usage: "Usage: /<command> [burn|glow]"
