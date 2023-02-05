@@ -1,6 +1,6 @@
 name: PetFix
 version: 1.0.0
-main: eu.ansquare.petfix.Main
+main: eu.ansquare.petfix.Petfix
 description: The petfix
 author: SasaElele
 website: https://papermc.io
